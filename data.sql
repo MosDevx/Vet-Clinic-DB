@@ -9,7 +9,8 @@ INSERT INTO animals (name, date_of_birth, escape_attempts,neutered,weight_kg) VA
 
 INSERT INTO animals (name, date_of_birth, escape_attempts,neutered,weight_kg) VALUES ('Devimon','2017-05-12',5,true,'11');
 
--- From branch query-and-update
+-- From branch query-and-update 
+-- Add additional data to populate the database
 
 INSERT INTO animals (name, date_of_birth, weight_kg,neutered,escape_attempts) VALUES ('Charmander', '2020-02-8', -11,false,0);
 

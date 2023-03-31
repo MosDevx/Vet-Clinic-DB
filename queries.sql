@@ -12,6 +12,7 @@ SELECT * from animals WHERE weight_kg >= 10.4 AND weight_kg <= 17.3;
 
 -- From branch query-and-update
 
+-- queries to practice Transactions
 BEGIN;
 UPDATE animals SET species = 'unspecified';
 SELECT * FROM animals;
@@ -43,7 +44,7 @@ UPDATE animals SET weight_kg = weight_kg * -1 WHERE weight_kg <= 0;
 SELECT * FROM animals;
 COMMIT;
 
-
+-- queries to practise aggregate functions
 SELECT COUNT(*) FROM animals;
 SELECT COUNT(*) FROM animals WHERE escape_attempts = 0;
 SELECT AVG(weight_kg) FROM animals;
