@@ -44,10 +44,28 @@ UPDATE animals SET weight_kg = weight_kg * -1 WHERE weight_kg <= 0;
 SELECT * FROM animals;
 COMMIT;
 
--- queries to practise aggregate functions
+-- queries to practice aggregate functions
 SELECT COUNT(*) FROM animals;
 SELECT COUNT(*) FROM animals WHERE escape_attempts = 0;
 SELECT AVG(weight_kg) FROM animals;
 SELECT neutered, SUM(escape_attempts) FROM animals GROUP BY neutered;
 SELECT  species,MIN(weight_kg),MAX(weight_kg) FROM animals GROUP BY species;
 SELECT  species,AVG(escape_attempts) FROM animals WHERE date_of_birth >= '1990-01-01' AND date_of_birth < '2000-01-01' GROUP BY species;
+
+
+-- queries to practice joins
+
+Select (name) from animals A JOIN owners O ON A.owner_id = O.id WHERE full_name = 'Melody Pond';
+
+Select A.name, S.name AS species from animals A JOIN species S ON A.species_id = S.id WHERE S.name = 'Pokemon';
+
+Select O.full_name AS Owner_Name, A.name AS Animal_Name from animals A RIGHT JOIN owners O  ON A.owner_id = O.id;
+
+
+SELECT COUNT(*), S.name FROM animals A JOIN species S on A.species_id = S.id  GROUP BY S.name;
+
+SELECT A.name, O.full_name, S.name FROM animals A JOIN owners O ON A.owner_id = O.id JOIN species S ON A.species_id = S.id where O.full_name = 'Jennifer Orwell' AND S.name='Digimon';
+
+SELECT A.name FROM animals A JOIN owners O ON A.owner_id = O.id WHERE O.full_name = 'Dean Winchester' AND A.escape_attempts= 0;
+
+SELECT full_name, animal_count FROM (SELECT COUNT(*) animal_count, O.full_name full_name  FROM animals A JOIN owners O ON A.owner_id = O.id  GROUP BY O.full_name) AS inner_query ORDER BY animal_count DESC LIMIT 1;
