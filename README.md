@@ -76,6 +76,11 @@ This is a database for a vet clinic. It contains tables for animals, owners, vet
   </ul>
 </details>
 
+### Key Features <a name="key-features"></a>
+
+- **Create tables for database**
+- **Populate tables with sample data**
+- **Run relevant queries to fetch data from database**
 
 <!-- GETTING STARTED -->
 
@@ -129,6 +134,10 @@ Example command:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## 🤝 Future Features <a name="future-features"></a>
+
+- **Add Join queries**
+- **Add multiple tables**
 
 
 <!-- CONTRIBUTING -->
