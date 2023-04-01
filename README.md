@@ -44,17 +44,14 @@ After you're finished please remove all the comments and instructions!
     - [Key Features](#key-features)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
+  
   - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
+
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ](#faq)
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
@@ -76,12 +73,16 @@ This is a database for a vet clinic. It contains tables for animals, owners, vet
   </ul>
 </details>
 
+### Key Features <a name="key-features"></a>
+
+- **Create tables for database**
+- **Populate tables with sample data**
+- **Run relevant queries to fetch data from database**
 
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
 
 To get a local copy up and running, follow these steps.
 
@@ -117,7 +118,6 @@ Example command:
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
 
 
 👤 **Moses Wamae**
@@ -129,6 +129,10 @@ Example command:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## 🤝 Future Features <a name="future-features"></a>
+
+- **Add Join queries**
+- **Add multiple tables**
 
 
 <!-- CONTRIBUTING -->
@@ -145,9 +149,8 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
 
-If you like this project...
+If you like this project leave a star!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -155,7 +158,6 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
 
 I would like to thank... God.Always!!
 
@@ -166,8 +168,6 @@ I would like to thank... God.Always!!
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](MIT.md) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+This project is [MIT](MIT.md) license
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
